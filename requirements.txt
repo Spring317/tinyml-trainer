@@ -1,0 +1,6 @@
+torch
+torchvision
+opencv-python
+onnx
+onnxruntime
+dataset-builder-inat
