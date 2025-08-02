@@ -8,9 +8,9 @@ global:
 #Modify these paths to the dataset you want to use
 paths:
   #path for the dataset you just downloaded
-  src_dataset: "/home/quydx/tinyML/data_prep/haute_garonne/Insecta"
+  src_dataset: "/home/quydx/tinyml-trainer/data_prep/haute_garonne/Insecta"
   #path for the sub-dataset you want to do training and validation (e.g. haute_garonne)
-  dst_dataset: "/home/quydx/tinyML/data_prep/haute_garonne"
+  dst_dataset: "/home/quydx/tinyml-trainer/data_prep/haute_garonne"
 
   #I am too lazy to change the path in the code, so I just put it here. Please don't touch it T.T
   web_crawl_output_json: "/home/quydx/tinyML/output/haute_garonne.json"
