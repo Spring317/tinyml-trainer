@@ -161,3 +161,4 @@ cython_debug/
 data/
 inat_2017/
 data_prep/haute_garonne
+models/convnext_:*
