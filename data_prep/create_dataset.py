@@ -137,7 +137,7 @@ class DatasetCreator:
         print(f"Speciese_label_map: {speciese_name_map_label}")
         total_other_samples = sum(species["sample_count"] for species in other_species)
         print(f"  All other {len(other_species)} species")
-        print(f"  Total samples: {total_other_samples}")
+        # print(f"  Total samples: {total_other_samples}")
         print("=" * 70)
 
         # Process selected n species as main classes (0, 1, 2, ..., n-1)
@@ -146,7 +146,7 @@ class DatasetCreator:
         ):
             class_name = species["class_name"]
             class_path = os.path.join(data_path, f"{class_name}")
-            print(f"Using class path: {class_path}")
+            # print(f"Using class path: {class_path}")
             if os.path.exists(class_path):
                 for sample in os.listdir(class_path):
                     if sample.lower().endswith((".jpg", ".jpeg", ".png", ".bmp")):
@@ -199,11 +199,11 @@ class DatasetCreator:
         print(
             f"Total classes: {other_class_label + 1} ({self.number_of_dominant_classes} main + 1 other)"
         )
-        print("Label counts:", label_counts)
-        print(f"Dataset: {dataset}")
+        # print("Label counts:", label_counts)
+        # print(f"Dataset: {dataset}")
         train, val = self.split_dataset(dataset)
-        print(f"Training set size: {len(train)} samples")
-        print(f"Validation set size: {len(val)} samples")
+        # print(f"Training set size: {len(train)} samples")
+        # print(f"Validation set size: {len(val)} samples")
 
         weights = self.calculate_weight_samples(label_counts)
         return dataset, train, val, weights, speciese_name_map_label

@@ -21,11 +21,13 @@ class DataLoaderCreator:
         num_workers: int = 4,
         dominant_threshold: float = 0.2,
         start_rank: int = 0,
+        is_binary: bool = False,
     ):
         self.batch_size = batch_size
         self.num_workers = num_workers
         self.dominant_threshold = dominant_threshold
         self.start_rank = start_rank
+        self.is_binary = is_binary
 
     def create_dataloader(
         self,
@@ -41,7 +43,9 @@ class DataLoaderCreator:
         )
 
         num_classes = len(species_labels.keys())
-
+        print(f"Number of classes in the dataset: {num_classes}")
+        if self.is_binary:
+            num_classes = 2
         print(f"Number of species from manifest: {num_classes}")
         datacreator = DatasetCreator(number_of_dominant_classes=num_classes)
 
