@@ -97,7 +97,7 @@ dominant_threshold: 0.9
 
   * According to Pareto principle (80/20 rule), I am only using 20% of the classes that cover 80% of the samples in the dataset since mcunet is having some problem with multiclass dataset (around 1500 or something like that?).
 
-    * These models then will be piped  together to accelerate the training (Explaination and implementation are illustrated in [this repo](https://github.com/Spring317/iNaturelist_transfer_learning_pytorch)).
+  * These models then will be piped  together to accelerate the training (Explaination and implementation are illustrated in [this repo](https://github.com/Spring317/iNaturelist_transfer_learning_pytorch)).
 
 * For the last model (the largest model), it will act as a failsafe to handle the remaining classes (the one that those tinymodel failed to detect or not in the dection range of the tinymodel)
 
