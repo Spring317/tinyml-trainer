@@ -1,0 +1,5 @@
+class_name,mean_confidence,min_confidence,max_confidence,std_confidence
+Class 0,0.9430861,0.44417912,1.0,0.10940721
+Class 1,0.941476,0.42414615,1.0,0.11742764
+Class 2,0.9693358,0.37241158,1.0,0.08787444
+Class 3,0.992206,0.44736877,1.0,0.04521381
