@@ -1,0 +1,4 @@
+Scenario,Time_ms
+Cold_Cache,87.0543
+Warm_Cache,71.7724
+Median_Repeated,70.6495

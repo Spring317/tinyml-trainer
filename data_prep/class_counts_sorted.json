@@ -1,0 +1,724 @@
+{
+  "class_counts_sorted": [
+    {
+      "class_name": "Apis mellifera",
+      "sample_count": 3252,
+      "rank": 1
+    },
+    {
+      "class_name": "Vanessa atalanta",
+      "sample_count": 1537,
+      "rank": 2
+    },
+    {
+      "class_name": "Harmonia axyridis",
+      "sample_count": 1354,
+      "rank": 3
+    },
+    {
+      "class_name": "Pieris rapae",
+      "sample_count": 1347,
+      "rank": 4
+    },
+    {
+      "class_name": "Coccinella septempunctata",
+      "sample_count": 990,
+      "rank": 5
+    },
+    {
+      "class_name": "Vanessa cardui",
+      "sample_count": 851,
+      "rank": 6
+    },
+    {
+      "class_name": "Nymphalis antiopa",
+      "sample_count": 606,
+      "rank": 7
+    },
+    {
+      "class_name": "Mantis religiosa",
+      "sample_count": 312,
+      "rank": 8
+    },
+    {
+      "class_name": "Sceliphron caementarium",
+      "sample_count": 270,
+      "rank": 9
+    },
+    {
+      "class_name": "Noctua pronuba",
+      "sample_count": 253,
+      "rank": 10
+    },
+    {
+      "class_name": "Aphis nerii",
+      "sample_count": 205,
+      "rank": 11
+    },
+    {
+      "class_name": "Lycaena phlaeas",
+      "sample_count": 197,
+      "rank": 12
+    },
+    {
+      "class_name": "Pararge aegeria",
+      "sample_count": 188,
+      "rank": 13
+    },
+    {
+      "class_name": "Aglais io",
+      "sample_count": 179,
+      "rank": 14
+    },
+    {
+      "class_name": "Bombus terrestris",
+      "sample_count": 178,
+      "rank": 15
+    },
+    {
+      "class_name": "Libellula quadrimaculata",
+      "sample_count": 175,
+      "rank": 16
+    },
+    {
+      "class_name": "Polistes dominula",
+      "sample_count": 135,
+      "rank": 17
+    },
+    {
+      "class_name": "Aglais urticae",
+      "sample_count": 133,
+      "rank": 18
+    },
+    {
+      "class_name": "Mythimna unipuncta",
+      "sample_count": 132,
+      "rank": 19
+    },
+    {
+      "class_name": "Papilio machaon",
+      "sample_count": 126,
+      "rank": 20
+    },
+    {
+      "class_name": "Lymantria dispar",
+      "sample_count": 124,
+      "rank": 21
+    },
+    {
+      "class_name": "Thymelicus lineola",
+      "sample_count": 124,
+      "rank": 22
+    },
+    {
+      "class_name": "Halyomorpha halys",
+      "sample_count": 116,
+      "rank": 23
+    },
+    {
+      "class_name": "Maniola jurtina",
+      "sample_count": 111,
+      "rank": 24
+    },
+    {
+      "class_name": "Aedes albopictus",
+      "sample_count": 109,
+      "rank": 25
+    },
+    {
+      "class_name": "Macroglossum stellatarum",
+      "sample_count": 106,
+      "rank": 26
+    },
+    {
+      "class_name": "Vespa crabro",
+      "sample_count": 106,
+      "rank": 27
+    },
+    {
+      "class_name": "Zelus renardii",
+      "sample_count": 104,
+      "rank": 28
+    },
+    {
+      "class_name": "Lasiommata megera",
+      "sample_count": 99,
+      "rank": 29
+    },
+    {
+      "class_name": "Pieris napi",
+      "sample_count": 98,
+      "rank": 30
+    },
+    {
+      "class_name": "Polygonia c-album",
+      "sample_count": 97,
+      "rank": 31
+    },
+    {
+      "class_name": "Plutella xylostella",
+      "sample_count": 96,
+      "rank": 32
+    },
+    {
+      "class_name": "Coenonympha pamphilus",
+      "sample_count": 95,
+      "rank": 33
+    },
+    {
+      "class_name": "Argynnis paphia",
+      "sample_count": 93,
+      "rank": 34
+    },
+    {
+      "class_name": "Polyommatus icarus",
+      "sample_count": 93,
+      "rank": 35
+    },
+    {
+      "class_name": "Bombylius major",
+      "sample_count": 91,
+      "rank": 36
+    },
+    {
+      "class_name": "Ischnura elegans",
+      "sample_count": 88,
+      "rank": 37
+    },
+    {
+      "class_name": "Eristalis tenax",
+      "sample_count": 86,
+      "rank": 38
+    },
+    {
+      "class_name": "Leptoglossus occidentalis",
+      "sample_count": 84,
+      "rank": 39
+    },
+    {
+      "class_name": "Tyria jacobaeae",
+      "sample_count": 81,
+      "rank": 40
+    },
+    {
+      "class_name": "Crocothemis erythraea",
+      "sample_count": 77,
+      "rank": 41
+    },
+    {
+      "class_name": "Episyrphus balteatus",
+      "sample_count": 76,
+      "rank": 42
+    },
+    {
+      "class_name": "Metcalfa pruinosa",
+      "sample_count": 76,
+      "rank": 43
+    },
+    {
+      "class_name": "Adalia bipunctata",
+      "sample_count": 72,
+      "rank": 44
+    },
+    {
+      "class_name": "Lampides boeticus",
+      "sample_count": 71,
+      "rank": 45
+    },
+    {
+      "class_name": "Orthetrum cancellatum",
+      "sample_count": 70,
+      "rank": 46
+    },
+    {
+      "class_name": "Anthrenus verbasci",
+      "sample_count": 69,
+      "rank": 47
+    },
+    {
+      "class_name": "Araschnia levana",
+      "sample_count": 69,
+      "rank": 48
+    },
+    {
+      "class_name": "Nezara viridula",
+      "sample_count": 69,
+      "rank": 49
+    },
+    {
+      "class_name": "Orthonama obstipata",
+      "sample_count": 69,
+      "rank": 50
+    },
+    {
+      "class_name": "Agrotis ipsilon",
+      "sample_count": 67,
+      "rank": 51
+    },
+    {
+      "class_name": "Anthidium manicatum",
+      "sample_count": 67,
+      "rank": 52
+    },
+    {
+      "class_name": "Aphantopus hyperantus",
+      "sample_count": 67,
+      "rank": 53
+    },
+    {
+      "class_name": "Autographa gamma",
+      "sample_count": 67,
+      "rank": 54
+    },
+    {
+      "class_name": "Melanargia galathea",
+      "sample_count": 66,
+      "rank": 55
+    },
+    {
+      "class_name": "Iphiclides podalirius",
+      "sample_count": 65,
+      "rank": 56
+    },
+    {
+      "class_name": "Pyralis farinalis",
+      "sample_count": 63,
+      "rank": 57
+    },
+    {
+      "class_name": "Pyrrhocoris apterus",
+      "sample_count": 63,
+      "rank": 58
+    },
+    {
+      "class_name": "Sympetrum striolatum",
+      "sample_count": 61,
+      "rank": 59
+    },
+    {
+      "class_name": "Hermetia illucens",
+      "sample_count": 59,
+      "rank": 60
+    },
+    {
+      "class_name": "Ochlodes sylvanus",
+      "sample_count": 57,
+      "rank": 61
+    },
+    {
+      "class_name": "Emmelina monodactyla",
+      "sample_count": 56,
+      "rank": 62
+    },
+    {
+      "class_name": "Euplagia quadripunctaria",
+      "sample_count": 56,
+      "rank": 63
+    },
+    {
+      "class_name": "Sympetrum fonscolombii",
+      "sample_count": 56,
+      "rank": 64
+    },
+    {
+      "class_name": "Agrius convolvuli",
+      "sample_count": 55,
+      "rank": 65
+    },
+    {
+      "class_name": "Gonepteryx rhamni",
+      "sample_count": 55,
+      "rank": 66
+    },
+    {
+      "class_name": "Propylea quatuordecimpunctata",
+      "sample_count": 55,
+      "rank": 67
+    },
+    {
+      "class_name": "Pyrausta inornatalis",
+      "sample_count": 55,
+      "rank": 68
+    },
+    {
+      "class_name": "Calopteryx virgo",
+      "sample_count": 54,
+      "rank": 69
+    },
+    {
+      "class_name": "Linepithema humile",
+      "sample_count": 53,
+      "rank": 70
+    },
+    {
+      "class_name": "Lucanus cervus",
+      "sample_count": 52,
+      "rank": 71
+    },
+    {
+      "class_name": "Pieris brassicae",
+      "sample_count": 52,
+      "rank": 72
+    },
+    {
+      "class_name": "Phragmatobia fuliginosa",
+      "sample_count": 51,
+      "rank": 73
+    },
+    {
+      "class_name": "Biston betularia",
+      "sample_count": 50,
+      "rank": 74
+    },
+    {
+      "class_name": "Epirrhoe alternata",
+      "sample_count": 50,
+      "rank": 75
+    },
+    {
+      "class_name": "Vespula vulgaris",
+      "sample_count": 50,
+      "rank": 76
+    },
+    {
+      "class_name": "Carabus nemoralis",
+      "sample_count": 49,
+      "rank": 77
+    },
+    {
+      "class_name": "Platycnemis pennipes",
+      "sample_count": 49,
+      "rank": 78
+    },
+    {
+      "class_name": "Pasiphila rectangulata",
+      "sample_count": 48,
+      "rank": 79
+    },
+    {
+      "class_name": "Colias croceus",
+      "sample_count": 47,
+      "rank": 80
+    },
+    {
+      "class_name": "Scathophaga stercoraria",
+      "sample_count": 47,
+      "rank": 81
+    },
+    {
+      "class_name": "Anthocharis cardamines",
+      "sample_count": 45,
+      "rank": 82
+    },
+    {
+      "class_name": "Aphomia sociella",
+      "sample_count": 45,
+      "rank": 83
+    },
+    {
+      "class_name": "Issoria lathonia",
+      "sample_count": 45,
+      "rank": 84
+    },
+    {
+      "class_name": "Idaea dimidiata",
+      "sample_count": 44,
+      "rank": 85
+    },
+    {
+      "class_name": "Xanthorhoe ferrugata",
+      "sample_count": 44,
+      "rank": 86
+    },
+    {
+      "class_name": "Celastrina argiolus",
+      "sample_count": 43,
+      "rank": 87
+    },
+    {
+      "class_name": "Ecliptopera silaceata",
+      "sample_count": 40,
+      "rank": 88
+    },
+    {
+      "class_name": "Lestes dryas",
+      "sample_count": 39,
+      "rank": 89
+    },
+    {
+      "class_name": "Anacridium aegyptium",
+      "sample_count": 38,
+      "rank": 90
+    },
+    {
+      "class_name": "Carterocephalus palaemon",
+      "sample_count": 38,
+      "rank": 91
+    },
+    {
+      "class_name": "Clogmia albipunctata",
+      "sample_count": 38,
+      "rank": 92
+    },
+    {
+      "class_name": "Limenitis reducta",
+      "sample_count": 38,
+      "rank": 93
+    },
+    {
+      "class_name": "Phaneroptera nana",
+      "sample_count": 38,
+      "rank": 94
+    },
+    {
+      "class_name": "Sitochroa palealis",
+      "sample_count": 38,
+      "rank": 95
+    },
+    {
+      "class_name": "Anania funebris",
+      "sample_count": 37,
+      "rank": 96
+    },
+    {
+      "class_name": "Anax imperator",
+      "sample_count": 37,
+      "rank": 97
+    },
+    {
+      "class_name": "Ectropis crepuscularia",
+      "sample_count": 37,
+      "rank": 98
+    },
+    {
+      "class_name": "Pentatoma rufipes",
+      "sample_count": 37,
+      "rank": 99
+    },
+    {
+      "class_name": "Pyronia tithonus",
+      "sample_count": 37,
+      "rank": 100
+    },
+    {
+      "class_name": "Enallagma cyathigerum",
+      "sample_count": 36,
+      "rank": 101
+    },
+    {
+      "class_name": "Aeshna cyanea",
+      "sample_count": 35,
+      "rank": 102
+    },
+    {
+      "class_name": "Musca domestica",
+      "sample_count": 35,
+      "rank": 103
+    },
+    {
+      "class_name": "Phlogophora meticulosa",
+      "sample_count": 35,
+      "rank": 104
+    },
+    {
+      "class_name": "Ancistrocerus gazella",
+      "sample_count": 34,
+      "rank": 105
+    },
+    {
+      "class_name": "Ocypus olens",
+      "sample_count": 34,
+      "rank": 106
+    },
+    {
+      "class_name": "Rhagonycha fulva",
+      "sample_count": 34,
+      "rank": 107
+    },
+    {
+      "class_name": "Sympetrum sanguineum",
+      "sample_count": 34,
+      "rank": 108
+    },
+    {
+      "class_name": "Chrysolina bankii",
+      "sample_count": 33,
+      "rank": 109
+    },
+    {
+      "class_name": "Cacyreus marshalli",
+      "sample_count": 32,
+      "rank": 110
+    },
+    {
+      "class_name": "Dorcus parallelipipedus",
+      "sample_count": 32,
+      "rank": 111
+    },
+    {
+      "class_name": "Leptinotarsa decemlineata",
+      "sample_count": 32,
+      "rank": 112
+    },
+    {
+      "class_name": "Plodia interpunctella",
+      "sample_count": 32,
+      "rank": 113
+    },
+    {
+      "class_name": "Rutpela maculata",
+      "sample_count": 32,
+      "rank": 114
+    },
+    {
+      "class_name": "Cetonia aurata",
+      "sample_count": 31,
+      "rank": 115
+    },
+    {
+      "class_name": "Polydrusus formosus",
+      "sample_count": 31,
+      "rank": 116
+    },
+    {
+      "class_name": "Pyrrhosoma nymphula",
+      "sample_count": 31,
+      "rank": 117
+    },
+    {
+      "class_name": "Arctia caja",
+      "sample_count": 29,
+      "rank": 118
+    },
+    {
+      "class_name": "Coenagrion puella",
+      "sample_count": 29,
+      "rank": 119
+    },
+    {
+      "class_name": "Oxythyrea funesta",
+      "sample_count": 29,
+      "rank": 120
+    },
+    {
+      "class_name": "Trithemis annulata",
+      "sample_count": 29,
+      "rank": 121
+    },
+    {
+      "class_name": "Vespula germanica",
+      "sample_count": 29,
+      "rank": 122
+    },
+    {
+      "class_name": "Aeshna mixta",
+      "sample_count": 28,
+      "rank": 123
+    },
+    {
+      "class_name": "Anania hortulata",
+      "sample_count": 28,
+      "rank": 124
+    },
+    {
+      "class_name": "Arctia villica",
+      "sample_count": 26,
+      "rank": 125
+    },
+    {
+      "class_name": "Scoliopteryx libatrix",
+      "sample_count": 26,
+      "rank": 126
+    },
+    {
+      "class_name": "Lucilia sericata",
+      "sample_count": 25,
+      "rank": 127
+    },
+    {
+      "class_name": "Oryctes nasicornis",
+      "sample_count": 25,
+      "rank": 128
+    },
+    {
+      "class_name": "Palomena prasina",
+      "sample_count": 25,
+      "rank": 129
+    },
+    {
+      "class_name": "Tettigonia viridissima",
+      "sample_count": 25,
+      "rank": 130
+    },
+    {
+      "class_name": "Apatura ilia",
+      "sample_count": 24,
+      "rank": 131
+    },
+    {
+      "class_name": "Coenonympha arcania",
+      "sample_count": 24,
+      "rank": 132
+    },
+    {
+      "class_name": "Cydalima perspectalis",
+      "sample_count": 23,
+      "rank": 133
+    },
+    {
+      "class_name": "Thaumetopoea pityocampa",
+      "sample_count": 23,
+      "rank": 134
+    },
+    {
+      "class_name": "Aporia crataegi",
+      "sample_count": 22,
+      "rank": 135
+    },
+    {
+      "class_name": "Melitaea didyma",
+      "sample_count": 22,
+      "rank": 136
+    },
+    {
+      "class_name": "Syritta pipiens",
+      "sample_count": 22,
+      "rank": 137
+    },
+    {
+      "class_name": "Coreus marginatus",
+      "sample_count": 21,
+      "rank": 138
+    },
+    {
+      "class_name": "Euborellia annulipes",
+      "sample_count": 21,
+      "rank": 139
+    },
+    {
+      "class_name": "Otiorhynchus sulcatus",
+      "sample_count": 21,
+      "rank": 140
+    },
+    {
+      "class_name": "Hippodamia variegata",
+      "sample_count": 19,
+      "rank": 141
+    },
+    {
+      "class_name": "Megachile sculpturalis",
+      "sample_count": 19,
+      "rank": 142
+    },
+    {
+      "class_name": "Orgyia antiqua",
+      "sample_count": 17,
+      "rank": 143
+    },
+    {
+      "class_name": "Evergestis pallidata",
+      "sample_count": 16,
+      "rank": 144
+    }
+  ]
+}
