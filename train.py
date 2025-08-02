@@ -85,6 +85,12 @@ def parse_args() -> Dict[str, Any]:
         default=0,
         help="Starting rank for distributed training (default: 0)",
     )
+
+    parser.add_argument(
+        "--is_binary",
+        action="store_true",
+        help="Enable binary classification mode (default: False)",
+    )
     # Parse the arguments
     args = parser.parse_args()
     return vars(args)  # Convert to dictionary
@@ -109,6 +115,7 @@ if __name__ == "__main__":
     # Dataset parameters
     DOMINANCE_THRESHOLD = args["threshold"]
     START_RANK = args["start_rank"]
+    IS_BINARY = args["is_binary"]
 
     print("Training with parameters:")
     print(f"  Model: {MODEL_NAME}")
@@ -117,12 +124,16 @@ if __name__ == "__main__":
     print(f"  Image Size: {IMG_SIZE}")
     print(f"  Learning Rate: {LR}")
     print(f"  Dominance Threshold: {DOMINANCE_THRESHOLD}")
-
+    print(f"  Start Rank: {START_RANK}")
+    print(f"  Output Directory: {OUTPUT_DIR}")
+    print(f"  Is Binary Classification: {IS_BINARY}")
+    # Create DataLoader
     data_loader = DataLoaderCreator(
         batch_size=BATCH_SIZE,
         num_workers=NUM_WORKERS,
         dominant_threshold=DOMINANCE_THRESHOLD,
         start_rank=START_RANK,
+        is_binary=IS_BINARY,
     )
     train_loader, val_loader, weights, NUM_SPECIES, small_species_label = (
         data_loader.create_dataloader()
@@ -209,6 +220,8 @@ if __name__ == "__main__":
                 f"Saving model with accuracy: {best_acc:.4f} and F1-score: {best_f1:.4f}"
             )
             name = f"{MODEL_NAME}_haute_garonne_{DOMINANCE_THRESHOLD}_{START_RANK}_best"
+            if IS_BINARY:
+                name = f"{name}_binary"
             model_handler.save_model(model, name, OUTPUT_DIR, IMG_SIZE)
             end_save = time.perf_counter()
             print(f"Save time: {end_save - start_save:.2f}s")
