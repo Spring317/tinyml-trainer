@@ -1,6 +1,6 @@
 # TinyML with MCUNet
 
-This is a fork of the MCUNet repository for utilizing TinyML to accelerate ML inferencing on Raspberry PI 4. This project aim to have multple MCUNet models act as cache to the bigger model for accelerating inferences.
+This is a fork of the MCUNet repository for utilizing TinyML to accelerate large ML-DL model inferencing. This project aim to have multple MCUNet models act as cache to the bigger model for accelerating inferences.
 
 ## Acknowledgement
 
