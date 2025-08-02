@@ -18,9 +18,9 @@ MCUNet is a framework designed to bring deep learning to IoT devices with extrem
 
 * Python 3.8+ 
 * CUDA-compatible GPU (optional, for faster training)
-* At least 4GB RAM
+* At least 16GB RAM (I mean like c'mon you won't train it on a cheap laptop do ya? :D)
 * git
-* Virtual Environment (Conda or Python)
+* Virtual Environment (Yes anything is good as long as you don't pollute your environment. Conda is recommended)
 
 ### Installation
 
@@ -39,7 +39,7 @@ cd tinyML
    conda activate tinyml
 ```
 
-* Note: This implementation will deploy the model to raspberry pi 4 using tflite framework. If you wish to deploy the model on the micro-controler, please refer to [tinyengine](https://github.com/mit-han-lab/tinyengine) repo
+* Note: This implementation will deploy the model to x86 device using onnx framework. If you wish to deploy the model on the micro-controler, please refer to [tinyengine](https://github.com/mit-han-lab/tinyengine) repo
 
 ## Training and validating:
 
@@ -89,18 +89,17 @@ dominant_threshold: 0.9
 ```
 3. Before starting, let me explain to you what I am doing in this experiment.
 
-* These repository is responsible for training the cache models which are lightweights, fast and predict only a few classes of the dataset.
+* These repository is responsible for training every models used in [this repo](https://github.com/Spring317/iNaturelist_transfer_learning_pytorch) ,including tinymodel: fast and predict only a few classes of the dataset and the Convnext large: large model with precised predictions.
 
-* This "few classes" is actually the classes with the most samples inside iNat2017 dataset, Insecta subset (for now)
+* For the tinymodel: 
 
-* According to Pareto principle (80/20 rule), I am only using 20% of the classes that cover 80% of the samples in the dataset since mcunet is having some problem with multiclass dataset (around 1500 or something like that?).
+  * This "few classes" is actually the classes with the most samples inside iNat2017 dataset, Insecta subset (for now)
 
-* TODOs: piping these model together with different class number and measure the results.
-* TODO: How to pipe you ask? Simple: 
-    * The `--threshold` flag to specify how many classes you want to cover (e.g. 0.7 means 70% of the classes will be covered). The framework will return you the number of corresponding classes that you will get, let's say n. So, you are predicting the n-1 dominant classes with the cache models and pass the last class (inidcated as "others") to the next models.  
-    * The `--start_rank` flags will allow you to choose the dominant classes for your next model (not necessary the first n dominant classes). This is use to create the second cache model. 
-    * The model will be saved in the `models/` directory
-    * For the last model (the largest model), please refer to this [iNaturelist_transfer_learning_pytorch repo](https://github.com/Spring317/iNaturelist_transfer_learning_pytorch)
+  * According to Pareto principle (80/20 rule), I am only using 20% of the classes that cover 80% of the samples in the dataset since mcunet is having some problem with multiclass dataset (around 1500 or something like that?).
+
+    * These models then will be piped  together to accelerate the training (Explaination and implementation are illustrated in [this repo](https://github.com/Spring317/iNaturelist_transfer_learning_pytorch)).
+
+* For the last model (the largest model), it will act as a failsafe to handle the remaining classes (the one that those tinymodel failed to detect or not in the dection range of the tinymodel)
 
 * Please run this command to kickstart the dataset preparation:
 ```bash
