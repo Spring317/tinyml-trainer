@@ -1,0 +1,14 @@
+Metric,Value
+Sample_Size,1000
+Mean_ms,6.08988
+Median_ms,6.05825
+StdDev_ms,0.156408
+Min_ms,5.9832
+Max_ms,7.526
+P95_ms,6.29147
+P99_ms,6.94882
+IQR_ms,0.054981
+Range_ms,1.5428
+ColdCache_ms,16.4061
+WarmCache_ms,6.43353
+CacheImprovement_percent,60.7859
