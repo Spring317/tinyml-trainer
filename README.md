@@ -49,8 +49,10 @@ cd tinyML
 wget https://ml-inat-competition-datasets.s3.amazonaws.com/2017/train_val_images.tar.gz
 
 tar -xvzf train_val_images.tar.gz
+# If you want to use only the Insecta class, you can use the following command to filter the dataset
+gdown --fuzzy https://drive.google.com/file/d/1nxchsalIXrmgcugGfmqIoCtt5uTF_Bkj/view?usp=sharing
+# Then extract it like above
 ```  
-
 2. Modify the config.yaml file to point to your data directory:
 ```yaml
 
@@ -97,7 +99,7 @@ dominant_threshold: 0.9
 
   * According to Pareto principle (80/20 rule), I am only using 20% of the classes that cover 80% of the samples in the dataset since mcunet is having some problem with multiclass dataset (around 1500 or something like that?).
 
-  * These models then will be piped  together to accelerate the training (Explaination and implementation are illustrated in [this repo](https://github.com/Spring317/iNaturelist_transfer_learning_pytorch)).
+  * These models then will be piped together to accelerate the training (Explaination and implementation are illustrated in [this repo](https://github.com/Spring317/iNaturelist_transfer_learning_pytorch)).
 
 * For the last model (the largest model), it will act as a failsafe to handle the remaining classes (the one that those tinymodel failed to detect or not in the dection range of the tinymodel)
 
@@ -106,33 +108,25 @@ dominant_threshold: 0.9
    python3 dataset_manifestation.py
 ```
 
-4.  Great! Now you could start the training with very *Easy* command:
+4.  Great! Now you could start the training. The command for training the large model (Convnext-Large) is given below:
 ```bash
-   python train.py --threshold 0.2 start_rank 0 #Feel free to change it to any value you want
+   python train.py --model convnext-large --threshold 1.0 --start_rank 0
+```
+5. If you want to train multiple small models (Yes the whole [repo](https://github.com/Spring317/iNaturelist_transfer_learning_pytorch) idea) please used this command. You could modify the range by accessing [train.sh](train.sh):
+```bash
+    bash train.sh 
+```
+6. For binary small model training. Similar to the previous step, you could modify the range by accessing [train_binary.sh](train_binary.sh):
 
-
+```bash
+   bash train_binary.sh
 ```
 
-5. Afterward you could make some *easy* validation based on the val.py script
+7. Afterward you could make some *easy* validation based on the [eval_onnx.py](eval_onnx.py) script
 ```bash
-   python3 eval.py
+   python3 eval_onnx.py --model small_model/mcunet-in2_haute_garonne_0.5_0_best.onnx --batch_size 1           
    #Add --help if you want to see the flags 
 ```
-
-If you want to test with a large amount of models to find out which one has the best performance:
-```bash
-   python3 eval_multiple.py
-```
-
-6.  You are good to go! Now all you have to do is to quantize the model and deploy it on the Pi
-```bash
-   python3 quantize.py
-```
-*UPDATE: 
-
-7.  For Deploying into Raspberry Pi 4b, please refer to the deployment repo [here](https://github.com/Spring317/mcunet-onnx-deploy)
-
-<!-- ## Results: -->
 <!-- ### Metrics: -->
 <!---->
 <!-- 1. Regular accuracy, recall, precision, F1-score for dominant classes -->
